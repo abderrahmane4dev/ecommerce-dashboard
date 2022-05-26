@@ -2,7 +2,7 @@ import images from "./images"
 
 const data = {
     user: {
-        name: 'Tuatta',
+        name: 'DAH',
         img: images.avt
     },
     summary: [
@@ -32,8 +32,8 @@ const data = {
         }
     ],
     revenueSummary: {
-        title: 'Revenue',
-        value: '$678',
+        title: 'Nombre de Service',
+        value: '678',
         chartData: {
             labels: ['May', 'Jun', 'July', 'Aug', 'May', 'Jun', 'July', 'Aug'],
             data: [300, 300, 280, 380, 200, 300, 280, 350]
@@ -41,37 +41,37 @@ const data = {
     },
     overall: [
         {
-            value: '300K',
-            title: 'Orders'
+            value: '9.876K ',
+            title: 'Formulaire'
         },
         {
-            value: '9.876K',
-            title: 'Customers'
+            value: '300K',
+            title: 'Clients'
         },
         {
             value: '1.234K',
-            title: 'Products'
+            title: 'Rendez-Vous'
         },
         {
-            value: '$5678',
-            title: 'Revenue'
+            value: '1028',
+            title: 'Candidature'
         }
     ],
     revenueByChannel: [
         {
-            title: 'Direct',
+            title: 'Ouverture des comptes',
             value: 70
         },
         {
-            title: 'External search',
-            value: 40
+            title: 'Demande des Crédit',
+            value: 70
         },
         {
-            title: 'Referal',
+            title: 'Banque a distance',
             value: 60
         },
         {
-            title: 'Social',
+            title: 'Autre',
             value: 30
         }
     ],

@@ -1,0 +1,91 @@
+.ClientForm{
+    background-color: white;
+    padding: 10px;
+    -webkit-box-shadow: -2px 2px 5px -5px #000000; 
+box-shadow: -2px 2px 15px -5px #000000;
+border-radius: 15px; 
+color: #222281;
+text-align: center;
+}
+.ClientForm .inputClient input{
+
+    height: 35px;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: px solid #0C426F;
+    border-bottom-width: 2px;
+    transition: all 0.6s ease;
+}
+.NomPre{
+     display: flex;
+     justify-content:space-around ;
+     background-color: #e3e3e3;
+}
+.inputClient{
+  
+    width: 400px;
+    float: left;
+}
+
+.inputClient input{
+    margin-top: 5px;
+}
+.idk input{
+    margin-top: 5px;
+}
+.in{
+ 
+    width: 400px;
+}
+.in input{
+    background-color: rgb(0, 0, 0);
+    width: 25px;
+}
+
+.inputClient select{
+    height: 35px;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: px solid #0C426F;
+    border-bottom-width: 2px;
+    transition: all 0.6s ease;
+}
+.idk{
+ 
+    width: 400px;
+    margin: 10px auto;
+    
+}
+.NomPre2{
+    text-align: center;
+    background-color: #e3e3e3;
+    padding: 1 auto;
+}
+.NomPre2 .idk input{
+
+    height: 35px;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: px solid #0C426F;
+    border-bottom-width: 2px;
+    transition: all 0.6s ease;
+}
+.Btn-EN input{
+    width: 110px;
+    height: 40px;
+    background-color: #0C426F;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+}

@@ -1,0 +1,27 @@
+.ChartPie{
+   display: inline-block;
+    width: 350px;
+    background-color: #FFFFFF;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 10px;
+-webkit-box-shadow: 1px 0px 31px -3px #000000; 
+box-shadow: 1px 0px 11px -5px #000000;
+}
+.zev{
+    width: 40px;
+    display: block;
+}
+.ChartPieCom {
+
+border-radius: 50% 50%;
+-webkit-box-shadow: 1px 0px 31px -3px #000000; 
+box-shadow: 1px 0px 31px -3px #000000;
+}
+.sum{
+    width: 200px;
+}
+.idkss{
+    width: 700px;
+    margin-top: 40px;
+}

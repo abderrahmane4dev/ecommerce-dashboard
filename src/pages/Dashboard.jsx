@@ -50,7 +50,7 @@ const Dashboard = () => {
                 <div className="row">
                     <div className="col-12">
                         <Box>
-                            <RevenueByMonthsChart />
+                        <RevenueByMonthsChart />
                         </Box>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ const RevenueByMonthsChart = () => {
         },
         elements: {
             bar: {
-                backgroundColor: colors.orange,
+                backgroundColor: "#101077",
                 borderRadius: 20,
                 borderSkipped: 'bottom'
             }
@@ -118,7 +118,7 @@ const RevenueByMonthsChart = () => {
     return (
         <>
             <div className="title mb">
-                Revenue by months
+                Rendez-vous par heure
             </div>
             <div>
                 <Bar options={chartOptions} data={chartData} height={`300px`} />

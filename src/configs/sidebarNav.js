@@ -9,19 +9,32 @@ const sidebarNav = [
         link: '/orders',
         section: 'orders',
         icon: <i className='bx bx-receipt' ></i>,
-        text: 'Orders'
+        text: 'Formulaire '
     },
     {
         link: '/products',
         section: 'products',
-        icon: <i className='bx bx-cube'></i>,
-        text: 'Products'
+        icon: <i className='bx bx-briefcase-alt'></i>,
+        text: 'Rendez vous '
     },
     {
         link: '/customers',
         section: 'customers',
-        icon: <i className='bx bx-user'></i>,
-        text: 'Customers'
+        icon: <i className='bx bxs-report' ></i>,
+        text: 'Signale du probleme '
+    },
+    {
+        link: '/candidature',
+        section: 'candidature',
+        icon: <i className='bx bxs-briefcase' ></i>,
+        text: 'Candidature '
+    },
+    
+    {
+        link: '/creer',
+        section: 'creer',
+        icon: <i className='bx bx-user' ></i>,
+        text: 'Ajouter Client '
     },
     {
         link: '/stats',
@@ -33,7 +46,7 @@ const sidebarNav = [
         link: '/settings',
         section: 'settings',
         icon: <i className='bx bx-cog'></i>,
-        text: 'Settings'
+        text: 'Ajouter Client'
     }
 ]
 

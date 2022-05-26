@@ -5,8 +5,8 @@ import { data } from '../../constants'
 const icons = [
     <i className='bx bx-receipt'></i>,
     <i className='bx bx-user'></i>,
-    <i className='bx bx-cube'></i>,
-    <i className='bx bx-dollar'></i>
+    <i className='bx bx-briefcase-alt'></i>,
+    <i className='bx bxs-briefcase'></i>
 ]
 
 const OverallList = () => {

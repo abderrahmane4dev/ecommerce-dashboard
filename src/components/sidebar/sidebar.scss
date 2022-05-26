@@ -31,9 +31,11 @@
         }
 
         img {
-            --size: 55px;
+            
+            --size: 130px;
+            --wdr : 90px ; 
             width: var(--size);
-            height: var(--size);
+            height: var(--wdr);
         }
 
         .sidebar-close {
