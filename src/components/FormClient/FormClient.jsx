@@ -101,6 +101,22 @@ class FormClient extends Component {
                     </div> 
 
         </div>
+        <br/>
+        <div className="NomPre">
+            <div className="inputClient">
+            <h4 class="details">Nom d'utilisateur</h4>
+            <input type="tel" id="phone" name="phone" placeholder="Format: 01234"
+            pattern="[0-9]{5}" 
+            required/>
+                </div>
+                <div className="inputClient"> 
+                <h4 class="details">Mot de passe </h4>
+            <input type="tel" id="phone" name="phone" placeholder="Format: 01234"
+            pattern="[0-9]{5}" 
+            required/>
+                    </div> 
+
+        </div>
            
  
        <br/>

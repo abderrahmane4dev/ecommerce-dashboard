@@ -3,74 +3,81 @@ import axios from 'axios';
 import '../components/datatable/style.css'
 import Datatable from '../components/Candidature/index';
 import TableScrollbar from 'react-table-scrollbar'; 
+import "./index.css"
+import { DataGrid } from '@mui/x-data-grid';
+import {  GridToolbarExport,
+  GridToolbarContainer } from '@mui/x-data-grid';
 
-
-export default function RendezV() { 
+  
+  function MyExportButton() {
+    return (
+      <GridToolbarContainer>
+        <GridToolbarExport />
+      </GridToolbarContainer>
+    );
+  }
+export default function Candidature() { 
  
 
- 
-  const [q, setQ] = useState('');
-  const [searchColumns, setSearchColumns] = useState([
-    'Nom',
-  ]);
 
+const columns = [
+  { field: '_id', headerName: 'Id', width: 100 },
+  { field: 'Civilite', headerName: 'Civilité', width: 100 },
+  { field: 'Nom', headerName: 'Nom', width: 130 },
+  { field: 'Prenom', headerName: 'Prenom', width: 130 },
+  { field: 'Age', headerName: 'Age', width: 90 },
+  { field: 'Wilaya',headerName: 'Wilaya',width: 130, },
+  { field: 'Adresse',headerName: 'Adresse',width: 130, },
 
-function search(rows) {
-  return rows.filter((row) =>
-    searchColumns.some(
-      (column) =>
-        row[column]
-          .toString()
-          .toLowerCase()
-          .indexOf(q.toLowerCase()) > -1,
-    ),
-  );
-}
+  { field: 'Ville', headerName: 'Ville', width: 130,},
+  { field: 'Email',headerName: 'Email',width: 130, },
+  { field: 'Diplome',headerName: 'Diplome',width: 130, },
+  { field: 'Specialite',headerName: 'Specialité',width: 130, },
+  { field: 'Filiere',headerName: 'Filiére',width: 130, },
+  { field: 'Experience',headerName: 'Expérience',width: 130, },
+  { field: 'Poste',headerName: 'Poste',width: 130, },
+  { field: 'Action',headerName: 'Action',width: 130,
+  renderCell: () => {
+   
 
-
+    return <button>Click</button>;
+  }
+},
+];
 
   /* GET METHOD */ 
   const [posts,setPosts]=useState([]);
   useEffect(()=>{
+   
     axios.get('http://localhost:5000/ape/recrut')
-    .then(res=> setPosts(res.data))
+    .then(res=> setPosts(res.data) 
+     )
     .catch(error=> console.log(error))
   });
-  const columns = posts[0] && Object.keys(posts[0]);
-return (
-  <div >
-  <div className='SearchData'>
-    
-  <input className='SearchInputt'
-      type='text'
-      value={q}
-      onChange={(e) => setQ(e.target.value)}
-    />
-    {columns &&
-      columns.map((column) => (
-        <label className='Label'>
-          <input  className='Labell'
-            type='checkbox'
-            checked={searchColumns.includes(column)}
-            onChange={(e) => {
-              const checked = searchColumns.includes(column);
-              setSearchColumns((prev) =>
-                checked
-                  ? prev.filter((sc) => sc !== column)
-                  : [...prev, column],
-              );
-            }}
-          />
-         
-          {column}
-        </label>
-      ))}
-  </div>
+
   
-  <div>
-  <Datatable posts={search(posts)} />
+return (
+  
+  <div  className="Data">
+      <div className='TitleFormulaire'><h2> Candidature</h2> </div>
+  <div  style={{ height: 600, width: '90%' }}>
+   
+      <DataGrid
+        rows={posts}
+        columns={columns}
+        pageSize={9}
+        getRowId={(r) => r._id}
+        rowsPerPageOptions={[5]}
+        checkboxSelection
+        components={{
+          Toolbar: MyExportButton,
+        }}
+      />
+       
+    </div>
+  
     
   </div>
-</div>
+
 );
 }

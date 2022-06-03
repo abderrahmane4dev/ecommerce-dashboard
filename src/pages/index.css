@@ -1,7 +1,19 @@
-.zok{
-  margin-left: 500px;
-  width : 50% ; 
-  display: flex;
-  float: right;
-  background-color: black;
+.Data .TitleFormulaire{
+    background-color: rgb(8, 38, 64);
+    width: 400px;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+#delete{
+    background-color: red;
+    border: 0 ;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width : 70px; 
+    height : 30px
 }

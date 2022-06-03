@@ -1,6 +1,21 @@
 import images from "./images"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+function Dd(){
+    const [posts,setPosts]=useState([]);
+  useEffect(()=>{
+   
+    axios.get('http://localhost:5000/ape/count')
+    .then(res=> setPosts(res.data) 
+     )
+    .catch(error=> console.log(error))
+  });
+  
+}
 
 const data = {
+    
     user: {
         name: 'DAH',
         img: images.avt
@@ -81,4 +96,4 @@ const data = {
     }
 }
 
-export default data
+export default data;

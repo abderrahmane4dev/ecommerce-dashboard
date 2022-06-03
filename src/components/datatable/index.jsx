@@ -8,11 +8,11 @@ export default function Datatable({ data }) {
     <div className='TableRendezVous'>
       
     < TableScrollbar>
-    <table  cellPadding={0} cellSpacing={0}>
+    <table >
       <thead className='TableHead' >
         <tr  >
           {data[0] && columns.map((heading) => <th  className='zb'>{heading}</th>)}
-          <th> Action </th>
+       
         </tr>
       </thead>
       <tbody>
@@ -21,7 +21,7 @@ export default function Datatable({ data }) {
             {columns.map((column) => (
               <td>{row[column]}</td>
             ))}
-              <td> <button> Accepter </button> <button> Refuser </button> </td>  
+             
           </tr>  
         ))} 
       </tbody>

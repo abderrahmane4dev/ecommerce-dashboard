@@ -43,10 +43,10 @@ const sidebarNav = [
         text: 'Stats'
     },
     {
-        link: '/settings',
+        link: '/newsletter',
         section: 'settings',
-        icon: <i className='bx bx-cog'></i>,
-        text: 'Ajouter Client'
+        icon: <i class='bx bxs-envelope'></i>,
+        text: 'NewsLetter'
     }
 ]
 
